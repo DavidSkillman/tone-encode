@@ -6,8 +6,8 @@
     // create Oscillator node
     const oscillator = audioCtx.createOscillator();
     
-    oscillator.type = "square";
-    oscillator.frequency.setValueAtTime(440, audioCtx.currentTime); // value in hertz
+    oscillator.type = "sine";
+    oscillator.frequency.setValueAtTime(19000, audioCtx.currentTime); // value in hertz
     oscillator.connect(audioCtx.destination);
     oscillator.start();
   }
